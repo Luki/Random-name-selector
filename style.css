@@ -1,12 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Consolas', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-
 .container {
     text-align: center;
 }
@@ -15,14 +14,12 @@ input[type="text"] {
     width: 300px;
     padding: 10px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-h1, h2 {
-    font-size: 24px;
 }
