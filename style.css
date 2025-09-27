@@ -1,1 +1,90 @@
+body {
+  font-family: 'Consolas', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  position: relative;
+  width: 400px;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b6b;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff6b6b;
+}
+
+.card-container {
+  position: relative;
+  height: 150px;
+  margin-top: 25px;
+}
+
+.card {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  background: white;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card.show {
+  opacity: 1;
+}
+
+.card.chosen {
+  background: #ff6b6b;
+  color: white;
+  transform: translateX(-50%) scale(1.2);
+  z-index: 100;
+}
 
