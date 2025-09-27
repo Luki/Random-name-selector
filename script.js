@@ -41,4 +41,3 @@ function shuffleCards() {
     }
   }, 100);
 }
-
